@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #333;
+    width: 200px; /* Set a fixed width for the vertical navbar */
+    height: 100vh; /* Full viewport height */
+    position: fixed; /* Fix the navbar to the side of the screen */
+    overflow: auto; /* Enable scrolling if content is too long */
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Ensure the links use up all the available width */
+}
+
+.nav-links li {
+    width: 100%; /* Full width to extend the background on hover */
+}
+
+.nav-links li a {
+    display: block;
+    color: white;
+    padding: 15px; /* Larger padding for a better click area */
+    text-decoration: none;
+    transition: background 0.3s ease; /* Smooth transition for background color */
+}
+
+.nav-links li a:hover, .nav-links li a:focus {
+    background-color: #555; /* Darker shade on hover/focus */
+    color: white;
+}
